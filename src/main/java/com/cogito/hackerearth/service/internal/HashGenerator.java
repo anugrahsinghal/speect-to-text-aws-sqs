@@ -1,14 +1,9 @@
 package com.cogito.hackerearth.service.internal;
 
+import java.util.UUID;
+
 public interface HashGenerator {
-    NonRepeatableHash getNonRepeatableHash(String fileName, int size);
-
-    // overload withdefault size of seven
-    NonRepeatableHash getNonRepeatableHash(String fileName);
-
-
-    // overload withdefault size of seven and takes not file name
-    NonRepeatableHash getNonRepeatableHash();
+    UUID getNonRepeatableHash();
 }
 
 

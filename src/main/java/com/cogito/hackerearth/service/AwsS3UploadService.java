@@ -25,7 +25,7 @@ public class AwsS3UploadService implements UploadService {
     public void uploadSpeech(Object input) {
 
         amazonS3.putObject(awsConfig.getBucketName(),
-                hashGenerator.getNonRepeatableHash().value(),
+                hashGenerator.getNonRepeatableHash().toString(),
                 // todo
                 (InputStream) input,
                 // todo
